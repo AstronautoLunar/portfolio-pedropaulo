@@ -69,17 +69,31 @@
 	padding-bottom: 58px;
 }
 
-#title {
+.title {
 	color: var(--platinum);
+
+	margin-bottom: 32px;
 }
 
 #projects {
 	display: grid;
+	grid-template-columns: 1fr 1fr;
 	justify-content: center;
 	align-content: center;
 	gap: 20px;
 }
 
-/*#projects > iframe {
+.project-image {
 	width: 426px;
-}*/
+	height: 225px;
+
+	object-fit: cover;
+
+	transition: transform 500ms;
+}
+
+.project-image:hover {
+	transform: scale(1.2);
+
+	z-index: 2;
+}
