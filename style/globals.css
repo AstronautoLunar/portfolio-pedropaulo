@@ -12,3 +12,7 @@
 	--glaucous: #758ECD;
 	--platinum: #EAEBED;
 }
+
+body {
+	background-color: var(--platinum);
+}

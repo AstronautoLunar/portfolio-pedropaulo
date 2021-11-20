@@ -1,0 +1,55 @@
+#header {
+	width: 100%;
+	height: 100px;
+}
+
+.container {
+	width: 800px;
+	height: 100%;
+}
+
+#header > .container, 
+#header,
+#list-navBar
+{
+	display: flex;
+	align-items: center;
+}
+
+#header > .container, #header {
+	justify-content: center;
+}
+
+#navBar,
+#list-navBar
+{
+	width: 100%;
+}
+
+#list-navBar {
+	justify-content: space-between;
+}
+
+#list-navBar > .item {
+	list-style-type: none;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.item > .link {
+	text-decoration: none;
+
+	color: var(--onyx);
+
+	font-size: 1.2rem;
+	font-weight: bold;
+
+	text-align: center;
+}
+
+.line {
+	transition: all 500ms;
+}
