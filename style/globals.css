@@ -13,7 +13,8 @@
 	--onyx: #393E41;
 	--onyx-alpha: rgba(57, 62, 65, 0.2);
 	--glaucous: #758ECD;
-	--platinum: #EAEBED;
+	--platinum: #eaebed;
+	--platinum-alpha: rgba(234, 235, 237, 0.5);
 }
 
 body {

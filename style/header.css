@@ -3,6 +3,19 @@
 	height: 100px;
 
 	border-bottom: 2px dashed var(--onyx-alpha);
+
+	position: sticky;
+	top: 0;
+
+	z-index: 3;
+
+	background-color: var(--platinum-alpha);
+
+	transition: background-color 500ms;
+}
+
+#header:hover {
+	background-color: var(--platinum);
 }
 
 #header > .container, 
