@@ -37,8 +37,6 @@
 }
 
 .item > .link {
-	text-decoration: none;
-
 	color: var(--onyx);
 
 	font-size: 1.2rem;
