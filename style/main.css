@@ -148,16 +148,20 @@
 }
 
 #stacks {
-	display: grid;
-	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+	display: flex;
 	justify-content: center;
-	justify-items: center;
-	align-content: center;
 	align-items: center;
+	flex-wrap: wrap;
 
 	gap: 42px;
 }
 
 .stack-image {
 	width: 100px;
+
+	transition: transform 500ms;
+}
+
+.stack-image:hover {
+	transform: scale(1.2);
 }
