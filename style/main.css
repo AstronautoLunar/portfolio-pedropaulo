@@ -62,17 +62,26 @@
 	color: var(--onyx);
 }
 
-#project-developer {
-	background-color: var(--onyx);
-
+.padding-section {
 	padding-top: 32px;
 	padding-bottom: 58px;
+
+}
+
+#projects-developer {
+	background-color: var(--onyx);
 }
 
 .title {
-	color: var(--platinum);
-
 	margin-bottom: 32px;
+}
+
+.light-text {
+	color: var(--platinum);
+}
+
+.dark-text {
+	color: var(--onyx);
 }
 
 #projects {
@@ -96,4 +105,19 @@
 	transform: scale(1.2);
 
 	z-index: 2;
+}
+
+#stacks {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+	justify-content: center;
+	justify-items: center;
+	align-content: center;
+	align-items: center;
+
+	gap: 42px;
+}
+
+.stack-image {
+	width: 100px;
 }
