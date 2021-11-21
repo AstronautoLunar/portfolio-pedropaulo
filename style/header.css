@@ -63,3 +63,9 @@
 .line {
 	transition: all 500ms;
 }
+
+@media screen and (max-width: 895px) {
+	#list-navBar {
+		justify-content: space-around;
+	}
+}

@@ -165,3 +165,78 @@
 .stack-image:hover {
 	transform: scale(1.2);
 }
+
+@media screen and (max-width: 951px) {
+	#projects {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+}
+
+@media screen and (max-width: 845px) {
+	.container {
+		width: 100%;
+	}
+
+	#stacks {
+		margin: 0 50px;
+	}
+}
+
+@media screen and (max-width: 723px) {
+	.stack-image {
+		width: 50px;
+	}
+}
+
+@media screen and (max-width: 697px) {
+	#info-developer > .container {
+		padding: 0 20px;
+	}
+
+	#description {
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 505px) {
+	.project-image {
+		width: 355px;
+		height: 187.5px;
+	}
+}
+
+@media screen and (max-width: 453px) {
+	.item > .link {
+		font-size: 1rem;
+	}
+}
+
+@media screen and (max-width: 387px) {
+	#image-developer > img {
+		width: 186px;
+		height: 186px;
+	}
+
+	#name {
+		font-size: 2rem;
+	}
+
+	#description {
+		font-size: 1.2rem;
+	}
+
+	.project-image {
+		width: 295px;
+		height: 155px;
+	}
+}
+
+@media screen and (max-width: 337px) {
+	.project-image {
+		width: 245px;
+		height: 129px;
+	}
+}

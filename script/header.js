@@ -3,19 +3,19 @@ const listNavBar = window.document.querySelector("#list-navBar");
 const itemsNavBar = [
 	{
 		name: "Home",
-		href: "#home"
+		href: "#info-developer"
 	},
 	{
 		name: "Projetos",
-		href: "#projects"
+		href: "#projects-developer"
 	},
 	{
 		name: "Tecnologias",
-		href: "#stacks"
+		href: "#stacks-developer"
 	},
 	{
 		name: "Contato",
-		href: "#contact"
+		href: "#footer"
 	}
 ];
 
