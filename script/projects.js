@@ -4,7 +4,7 @@ const projectsImage = [
 	{
 		href: "https://desafio-faq-cartao-acordeao.vercel.app",
 		src: "./assets/projects/screenshot1.PNG",
-		alt: "projeto faq-cartao-acordeao",
+		name: "Faq cartão acordeão",
 		stacks: [
 			{
 				name: "html",
@@ -26,7 +26,7 @@ const projectsImage = [
 	{
 		href: "https://desafio-profile-card-component-main.vercel.app",
 		src: "./assets/projects/screenshot2.PNG",
-		alt: "projeto card de perfil ",
+		name: "Card de perfil ",
 		stacks: [
 			{
 				name: "html",
@@ -43,7 +43,7 @@ const projectsImage = [
 	{
 		href: "https://desafio-social-proof-section.vercel.app",
 		src: "./assets/projects/screenshot3.PNG",
-		alt: "projeto seção de prova social",
+		name: "Seção de prova social",
 		stacks: [
 			{
 				name: "html",
@@ -60,7 +60,7 @@ const projectsImage = [
 	{
 		href: "https://desafio-article-preview-component.vercel.app",
 		src: "./assets/projects/screenshot4.PNG",
-		alt: "projeto componente de visualização do artigo",
+		name: "Componente de visualização do artigo",
 		stacks: [
 			{
 				name: "html",
@@ -85,7 +85,7 @@ projectsImage.forEach(project => {
 	const { 
 		href, 
 		src, 
-		alt, 
+		name, 
 		stacks 
 	} = project;
 
@@ -115,7 +115,7 @@ projectsImage.forEach(project => {
 					<div class="stacks-project-image">
 					${groupStacks}
 					</div>
-					<h2 class="title-project-image">${alt}</h2>
+					<h2 class="title-project-image">${name}</h2>
 				</div>
 			</div>
 		</a>
