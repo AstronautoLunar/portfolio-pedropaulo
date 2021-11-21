@@ -1,0 +1,38 @@
+#footer {
+    width: 100%;
+
+    background-color: var(--onyx);
+
+    
+
+    padding: 48px 0;
+}
+
+#footer,
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#contacts {
+    margin-top: 48px;
+}
+
+.social-media {
+    width: 60px;
+
+    border-radius: 100%;
+
+    margin: 0 10px;
+
+    transition-property: border-radius, transform;
+    transition-duration: 500ms;
+}
+
+.social-media:hover {
+    transform: scale(1.2);
+
+    border-radius: 0;
+}
