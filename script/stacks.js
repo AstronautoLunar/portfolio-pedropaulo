@@ -37,11 +37,17 @@ const stacks = [
 		alt: "icon vue js",
 		href: "https://vuejs.org"
 	},
+	// {
+	// 	name: "electron.js",
+	// 	src: "./assets/icons/icon-electron.svg",
+	// 	alt: "icon electron js",
+	// 	href: "https://www.electronjs.org"
+	// },
 	{
-		name: "electron.js",
-		src: "./assets/icons/icon-electron.svg",
-		alt: "icon electron js",
-		href: "https://www.electronjs.org"
+		name: "Jquery.js",
+		src: "./assets/icons/icon-jquery.svg",
+		alt: "icon Jquery js",
+		href: "https://jquery.com"
 	},
 	{
 		name: "webpack.js",
