@@ -82,7 +82,20 @@ const projectsImage = [
 				alt: "icon javascript"
 			},
 		]
-	}
+	},
+	{
+		href: "https://insure-landing-page-vue.vercel.app",
+		src: "./assets/projects/screenshot5.PNG",
+		name: "Insure Landing Page",
+		description: "Esse é uma landing page simples da marca insure",
+		stacks: [
+			{
+				name: "vue.js",
+				src: "./assets/icons/icon-vue.svg",
+				alt: "icon vue.js"
+			}
+		]
+	},
 ];
 
 projectsImage.forEach(project => {
@@ -143,4 +156,10 @@ projectsImages.forEach(item => {
 
 		background.style.opacity = 0;
 	}, false);
+});
+
+areaProjects.addEventListener("wheel", (event) => {
+	event.preventDefault();
+
+	areaProjects.scrollLeft += event.deltaY * 3;
 });
