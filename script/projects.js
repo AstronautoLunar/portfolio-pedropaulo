@@ -5,6 +5,7 @@ const projectsImage = [
 		href: "https://desafio-faq-cartao-acordeao.vercel.app",
 		src: "./assets/projects/screenshot1.PNG",
 		name: "Faq cartão acordeão",
+		description: "Basicamente um site que exibe um cartão de perguntas e respostas",
 		stacks: [
 			{
 				name: "html",
@@ -27,6 +28,7 @@ const projectsImage = [
 		href: "https://desafio-profile-card-component-main.vercel.app",
 		src: "./assets/projects/screenshot2.PNG",
 		name: "Card de perfil ",
+		description: "Esse mostra na tela uma card que mostra o perfil do cliente",
 		stacks: [
 			{
 				name: "html",
@@ -44,6 +46,7 @@ const projectsImage = [
 		href: "https://desafio-social-proof-section.vercel.app",
 		src: "./assets/projects/screenshot3.PNG",
 		name: "Seção de prova social",
+		description: "Esse faz uma demonstração da qualidade do produto mostrando uma seção de comentários",
 		stacks: [
 			{
 				name: "html",
@@ -61,6 +64,7 @@ const projectsImage = [
 		href: "https://desafio-article-preview-component.vercel.app",
 		src: "./assets/projects/screenshot4.PNG",
 		name: "Componente de visualização do artigo",
+		description: "Esse é um card de visualização do produto",
 		stacks: [
 			{
 				name: "html",
@@ -85,7 +89,8 @@ projectsImage.forEach(project => {
 	const { 
 		href, 
 		src, 
-		name, 
+		name,
+		description,
 		stacks 
 	} = project;
 
@@ -102,23 +107,25 @@ projectsImage.forEach(project => {
 	))
 
 	areaProjects.innerHTML += `
-		<a 
-			class="link" 
-			target="_blank" 
-			href="${ href }"
+		<div 
+			class="project-image"
+			style="background-image: url(${src});"
 		>
-			<div 
-				class="project-image"
-				style="background-image: url(${src});"
-			>
-				<div class="background-of-project-image">
+			<div class="background-of-project-image">
+				<h2 class="title-project-image">${name}</h2>
+				<span class="description">
+					${description}
+				</span>
+				<div class="stacks-and-buttons">
 					<div class="stacks-project-image">
 					${groupStacks}
 					</div>
-					<h2 class="title-project-image">${name}</h2>
+					<a class="button-link-project" href="${href}" target="_blank">
+						Conhecer
+					</a>
 				</div>
 			</div>
-		</a>
+		</div>
 	`
 })
 
