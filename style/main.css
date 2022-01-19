@@ -99,13 +99,14 @@
 	height: 300px;
 
 	display: flex;
-	justify-content: center;
 	align-items: center;
 	gap: 20px;
 
-	overflow-x: scroll;
+	overflow-x: auto;
 
 	scroll-behavior: smooth;
+
+	padding: 0 20px;
 }
 
 .project-image {
@@ -161,16 +162,11 @@
 .stacks-project-image > img {
 	width: 30px;
 
-	margin-left: 10px;
 	margin-right: 10px;
 }
 
-.stacks-project-image > img:first-of-type {
-	margin-left: 0;
-}
-
 .stacks-project-image > img:last-of-type {
-	margin-left: 0;
+	margin-right: 0;
 }
 
 .stacks-and-buttons {

@@ -2,6 +2,29 @@ const areaProjects = window.document.querySelector("#projects");
 
 const projectsImage = [
 	{
+		href: "https://training-music.vercel.app",
+		src: "./assets/projects/screenshot9.PNG",
+		name: "Treinador de ouvido",
+		description: "Esse é basicamente um quiz de sons de notas musicais para treinar o ouvido",
+		stacks: [
+			{
+				name: "html",
+				src: "./assets/icons/icon-html.svg",
+				alt: "icon html"
+			},
+			{
+				name: "css",
+				src: "./assets/icons/icon-css.svg",
+				alt: "icon css"
+			},
+			{
+				name: "javascript",
+				src: "./assets/icons/icon-javascript.svg",
+				alt: "icon javascript"
+			},
+		]
+	},
+	{
 		href: "https://desafio-faq-cartao-acordeao.vercel.app",
 		src: "./assets/projects/screenshot1.PNG",
 		name: "Faq cartão acordeão",
@@ -96,6 +119,55 @@ const projectsImage = [
 			}
 		]
 	},
+	{
+		href: "https://stats-preview-card-component-next.vercel.app",
+		src: "./assets/projects/screenshot6.PNG",
+		name: "Componente de cartão de visualização de estatística",
+		description: "Esse site mostra um card de visualização de estatística",
+		stacks: [
+			{
+				name: "next.js",
+				src: "./assets/icons/icon-next.svg",
+				alt: "icon next.js"
+			},
+			{
+				name: "typescript",
+				src: "./assets/icons/icon-typescript.svg",
+				alt: "icon typescript.js"
+			},
+			{
+				name: "sass",
+				src: "./assets/icons/icon-sass.svg",
+				alt: "icon sass"
+			}
+		]
+	},
+	{
+		href: "https://loopstudios-landing-page-vue.vercel.app",
+		src: "./assets/projects/screenshot7.gif",
+		name: "Loopstudios Landing Page",
+		description: "Basicamente uma lading page da marca Loopstudios",
+		stacks: [
+			{
+				name: "vue.js",
+				src: "./assets/icons/icon-vue.svg",
+				alt: "icon vue.js"
+			}
+		]
+	},
+	{
+		href: "https://column-preview-card-component-vanila.vercel.app",
+		src: "./assets/projects/screenshot8.PNG",
+		name: "Componente de cartão de visualização de coluna",
+		description: "Basicamente um web que mostra cartões em forma de coluna",
+		stacks: [
+			{
+				name: "react.js",
+				src: "./assets/icons/icon-react.svg",
+				alt: "icon react.js"
+			}
+		]
+	},
 ];
 
 projectsImage.forEach(project => {
@@ -158,8 +230,8 @@ projectsImages.forEach(item => {
 	}, false);
 });
 
-areaProjects.addEventListener("wheel", (event) => {
-	event.preventDefault();
+// areaProjects.addEventListener("wheel", (event) => {
+// 	event.preventDefault();
 
-	areaProjects.scrollLeft += event.deltaY * 3;
-});
+// 	areaProjects.scrollLeft += event.deltaY * 4;
+// });

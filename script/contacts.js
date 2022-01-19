@@ -1,7 +1,5 @@
 const areaContacts = window.document.querySelector("#contacts");
 
-console.log(areaContacts);
-
 const contacts = [
     {
         name: "instagram",
