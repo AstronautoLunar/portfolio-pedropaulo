@@ -2,6 +2,52 @@ const areaProjects = window.document.querySelector("#projects");
 
 const projectsImage = [
 	{
+		href: "https://social-media-dashboard-next.vercel.app",
+		src: "./assets/projects/screenshot11.PNG",
+		name: "Social Media Dashboard",
+		description: "Esse é simplesmente um Painel de mídia social",
+		stacks: [
+			{
+				name: "next.js",
+				src: "./assets/icons/icon-next.svg",
+				alt: "icon next.js"
+			},
+			{
+				name: "typescript",
+				src: "./assets/icons/icon-typescript.svg",
+				alt: "icon typescript.js"
+			},
+			{
+				name: "sass",
+				src: "./assets/icons/icon-sass.svg",
+				alt: "icon sass"
+			}
+		]
+	},
+	{
+		href: "https://imc-gamma.vercel.app",
+		src: "./assets/projects/screenshot10.gif",
+		name: "IMC",
+		description: "Esse é basicamente uma calculadora de IMC(Indice de Massa Corporal)",
+		stacks: [
+			{
+				name: "html",
+				src: "./assets/icons/icon-html.svg",
+				alt: "icon html"
+			},
+			{
+				name: "css",
+				src: "./assets/icons/icon-css.svg",
+				alt: "icon css"
+			},
+			{
+				name: "javascript",
+				src: "./assets/icons/icon-javascript.svg",
+				alt: "icon javascript"
+			},
+		]
+	},
+	{
 		href: "https://training-music.vercel.app",
 		src: "./assets/projects/screenshot9.PNG",
 		name: "Treinador de ouvido",
@@ -230,8 +276,8 @@ projectsImages.forEach(item => {
 	}, false);
 });
 
-// areaProjects.addEventListener("wheel", (event) => {
-// 	event.preventDefault();
+areaProjects.addEventListener("wheel", (event) => {
+	event.preventDefault();
 
-// 	areaProjects.scrollLeft += event.deltaY * 4;
-// });
+	areaProjects.scrollLeft += event.deltaY * 4;
+});
