@@ -70,10 +70,22 @@
 
 #projects-developer {
 	background-color: var(--onyx);
+
+	flex-direction: column;
 }
 
 .title {
 	margin-bottom: 32px;
+}
+
+.description {
+	font-size: 16px;
+
+	color: var(--platinum);
+
+	text-align: center;
+
+	margin: 0 24px;
 }
 
 .light-text {
@@ -85,14 +97,24 @@
 }
 
 #projects {
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-	justify-content: center;
-	align-content: center;
+	width: 100%;
+	height: 300px;
+
+	display: flex;
+	align-items: center;
 	gap: 20px;
+
+	overflow-x: auto;
+
+	scroll-behavior: smooth;
+
+	padding: 0 20px;
 }
 
 .project-image {
+	flex-grow: 0;
+	flex-shrink: 0;
+
 	width: 426px;
 	height: 225px;
 
@@ -120,7 +142,7 @@
 	justify-content: space-evenly;
 	align-items: center;
 
-	background-image: linear-gradient(to bottom, transparent, var(--onyx));
+	background-color: rgba(57, 62, 65, 0.7);
 
 	transition: opacity 500ms;
 }
@@ -135,8 +157,6 @@
 
 .stacks-project-image {
 	display: flex;
-	justify-content: center;
-	align-items: center;
 
 	width: 100%;
 }
@@ -144,7 +164,57 @@
 .stacks-project-image > img {
 	width: 30px;
 
-	margin: 0 10px;
+	margin-right: 10px;
+}
+
+.stacks-project-image > img:last-of-type {
+	margin-right: 0;
+}
+
+.stacks-and-buttons {
+	width: 85%;
+
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.button-link-project {
+	color: var(--platinum);
+
+	padding: 16px;
+
+	border: 1px solid var(--platinum);
+
+	position: relative;
+
+	z-index: 2;
+}
+
+.button-link-project,
+.button-link-project::before
+{
+	border-radius: 8px
+}
+
+.button-link-project::before {
+	background-color: var(--glaucous);
+
+	content: "";
+	
+	inset: 0 0 0 0;
+	position: absolute;
+
+	z-index: -1;
+
+	transform-origin: left top;
+	transform: scaleX(0);
+
+	transition: transform 500ms;
+}
+
+.button-link-project:hover::before {
+	transform: scaleX(1);
 }
 
 #stacks {
@@ -166,13 +236,14 @@
 	transform: scale(1.2);
 }
 
-@media screen and (max-width: 951px) {
-	#projects {
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-	}
+#link-email {
+	color: var(--platinum);
+
+	font-size: 24px;
+
+	margin-top: 16px;
+
+	text-decoration: underline;
 }
 
 @media screen and (max-width: 845px) {
@@ -212,6 +283,10 @@
 	.item > .link {
 		font-size: 1rem;
 	}
+
+	#link-email {
+		font-size: 16px;
+	}
 }
 
 @media screen and (max-width: 387px) {
@@ -231,6 +306,24 @@
 	.project-image {
 		width: 295px;
 		height: 155px;
+	}
+
+	.title-project-image {
+		font-size: 14px;
+	}
+
+	.description {
+		font-size: 12px;
+	}
+
+	.stacks-project-image > img {
+		width: 15px;
+	}
+
+	.button-link-project {
+		font-size: 8px;
+
+		padding: 8px;
 	}
 }
 

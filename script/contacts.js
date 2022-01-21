@@ -1,14 +1,6 @@
 const areaContacts = window.document.querySelector("#contacts");
 
-console.log(areaContacts);
-
 const contacts = [
-    {
-        name: "instagram",
-        src: "./assets/icons/icon-instagram.svg",
-        alt: "icon instagram",
-        href: "https://www.instagram.com/pyedrown"
-    },
     {
         name: "linkedin",
         src: "./assets/icons/icon-linkedin.svg",
