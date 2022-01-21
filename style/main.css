@@ -236,13 +236,14 @@
 	transform: scale(1.2);
 }
 
-@media screen and (max-width: 951px) {
-	#projects {
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-	}
+#link-email {
+	color: var(--platinum);
+
+	font-size: 24px;
+
+	margin-top: 16px;
+
+	text-decoration: underline;
 }
 
 @media screen and (max-width: 845px) {
@@ -282,6 +283,10 @@
 	.item > .link {
 		font-size: 1rem;
 	}
+
+	#link-email {
+		font-size: 16px;
+	}
 }
 
 @media screen and (max-width: 387px) {
@@ -301,6 +306,24 @@
 	.project-image {
 		width: 295px;
 		height: 155px;
+	}
+
+	.title-project-image {
+		font-size: 14px;
+	}
+
+	.description {
+		font-size: 12px;
+	}
+
+	.stacks-project-image > img {
+		width: 15px;
+	}
+
+	.button-link-project {
+		font-size: 8px;
+
+		padding: 8px;
 	}
 }
 
