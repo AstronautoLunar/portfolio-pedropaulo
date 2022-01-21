@@ -61,6 +61,12 @@ const stacks = [
 		alt: "icon gulp js",
 		href: "https://gulpjs.com"
 	},
+	{
+		name: "express.js",
+		src: "./assets/icons/icon-express.svg",
+		alt: "icon express js",
+		href: "https://expressjs.com/pt-br/"
+	},
 ];
 
 stacks.forEach(stack => {
